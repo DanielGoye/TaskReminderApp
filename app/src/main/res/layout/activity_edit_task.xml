@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTaskActivity">
+
+    <RelativeLayout
+        android:id="@+id/changeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/changeTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="The title of your task" />
+
+        <EditText
+            android:id="@+id/changeTaskDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changeTaskName"
+            android:hint="A description of your task"
+            android:lines="2" />
+
+        <EditText
+            android:id="@+id/changeTaskTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/changeTaskDesc"
+            android:hint="Time for your task"
+            android:inputType="time"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/editTaskBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="EDIT TASK" />
+
+</RelativeLayout>
